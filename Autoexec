@@ -1,0 +1,110 @@
+//|--------------------------------------------------------------------------------------------------------------|
+//|----------------------------------- Rekpoints Competitive Autoexec -------------------------------------------|
+//|--------------------------------------------------------------------------------------------------------------|
+
+
+//|--Jump Throw Bind--|
+alias "+jumpaction" "+jump;"
+alias "+throwaction" "-attack; -attack2"
+alias "-jumpaction" "-jump" 
+bind mouse5 "+jumpaction;+throwaction;" //Bind Key for Jumpthrow
+
+alias "+runthrow" "+forward;+jump;" 
+alias "-runthrow" "-jump;-forward" 
+bind h "+runthrow;+throwaction" //Bind Key for Walk Jumpthrow
+
+
+//|---P250 Spam Buy---|
+bind "kp_slash" "buy p250; use weapon_p250;drop"
+
+//Radar Settings
+cl_hud_radar_scale "0.9"<br />
+cl_radar_scale "0.4"<br />
+cl_radar_always_centered "0"
+
+exec csgosettings
+
+
+// Bob Commands
+
+cl_usenewbob false
+
+
+
+//Tick Lock Movement
+bind d "+right;"
+bind a "+left;"
+bind w "+forward;"
+bind s "+back;"
+bind ctrl "+duck;"
+bind shift "+sprint;"
+bind mouse1 "+attack;"
+
+
+//|--------------------------------------------------------------------------------------------------------------|
+//|---------------------- Idling Script -- 'AFKon' to enable, 'AFKoff' to disable ----------------------|
+//|--------------------------------------------------------------------------------------------------------------|
+alias AFKon "+forward; +moveleft; +left; cl_disablehtmlmotd 1; echo Idle Script by Rek9 - [Enabled]"
+alias AFKoff "-forward; -moveleft; -left; cl_disablehtmlmotd 0; echo Idle Script by Rek9 - [Disabled]"
+//|--------------------------------------------------------------------------------------------------------------|
+//|--------------------------------------------------------------------------------------------------------------|
+
+
+//|-----------Buy Binds------|
+
+
+bind "kp_enter" "buy vest; buy vesthelm; buy defuser;"
+bind "kp_del" "buy awp;"
+bind "kp_0" "buy ak47;buy m4a1;buy m4a1_silencer;"
+bind "kp_minus" "buy hegrenade;"
+bind "kp_plus" "buy molotov; buy incgrenade;"
+bind "kp_5" "buy ssg08;"
+bind "kp_divide" "buy smokegrenade;"
+bind "kp_multiply" "buy flashbang;"
+bind "kp_3" "buy galilar; buy famas;"
+bind "kp_6" "buy mp7;"
+bind "kp_9" "buy p90;"
+bind "kp_2" "buy sg556; buy aug;"
+bind "kp_1" "buy tec9; buy fiveseven;"
+bind "kp_4" "buy p250;"
+bind "kp_7" "buy deagle;"
+bind "kp_8" "buy mac10; buy mp9;"
+
+
+
+//Launch Options
+-freq 240 -high -novid -d3d9ex -tickrate 128 -nojoy
+
+
+
+//Crosshair
+cl_crosshair_drawoutline "0"
+cl_crosshair_dynamic_maxdist_splitratio "0.35"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.5"
+cl_crosshair_dynamic_splitdist "7"
+cl_crosshair_friendly_warning "1"
+cl_crosshair_outlinethickness "1"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "1"
+cl_crosshair_t "0"
+cl_crosshairalpha "255"
+cl_crosshaircolor "5"
+cl_crosshaircolor_b "170"
+cl_crosshaircolor_g "255"
+cl_crosshaircolor_r "0"
+cl_crosshairdot "1"
+cl_crosshairgap "-2"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairsize "1"
+cl_crosshairstyle "5"
+cl_crosshairthickness "0"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "3"
+
+
+
+// Debug
+echo
+echo +++ Rekpoints CS2 autoexec.cfg executed successfully +++
+echo
