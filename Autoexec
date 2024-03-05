@@ -3,7 +3,7 @@
 //|--------------------------------------------------------------------------------------------------------------|
 
 
-//|--Jump Throw Bind--|
+//Jump Throw Binds
 alias "+jumpaction" "+jump;"
 alias "+throwaction" "-attack; -attack2"
 alias "-jumpaction" "-jump" 
@@ -14,7 +14,7 @@ alias "-runthrow" "-jump;-forward"
 bind h "+runthrow;+throwaction" //Bind Key for Walk Jumpthrow
 
 
-//|---P250 Spam Buy---|
+//P250 Spam Buy
 bind "kp_slash" "buy p250; use weapon_p250;drop"
 
 //Radar Settings
@@ -25,7 +25,7 @@ cl_radar_always_centered "0"
 exec csgosettings
 
 
-// Bob Commands
+//Bob Commands
 
 cl_usenewbob false
 
@@ -50,7 +50,7 @@ alias AFKoff "-forward; -moveleft; -left; cl_disablehtmlmotd 0; echo Idle Script
 //|--------------------------------------------------------------------------------------------------------------|
 
 
-//|-----------Buy Binds------|
+//Buy Binds
 
 
 bind "kp_enter" "buy vest; buy vesthelm; buy defuser;"
@@ -104,7 +104,7 @@ cl_fixedcrosshairgap "3"
 
 
 
-// Debug
+//Debug
 echo
 echo +++ Rekpoints CS2 autoexec.cfg executed successfully +++
 echo
