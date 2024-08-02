@@ -29,8 +29,6 @@ exec csgosettings
 
 cl_usenewbob false
 
-
-
 //Tick Lock Movement
 bind d "+right;"
 bind a "+left;"
@@ -39,15 +37,6 @@ bind s "+back;"
 bind ctrl "+duck;"
 bind shift "+sprint;"
 bind mouse1 "+attack;"
-
-
-//|--------------------------------------------------------------------------------------------------------------|
-//|---------------------- Idling Script -- 'AFKon' to enable, 'AFKoff' to disable ----------------------|
-//|--------------------------------------------------------------------------------------------------------------|
-alias AFKon "+forward; +moveleft; +left; cl_disablehtmlmotd 1; echo Idle Script by Rek9 - [Enabled]"
-alias AFKoff "-forward; -moveleft; -left; cl_disablehtmlmotd 0; echo Idle Script by Rek9 - [Disabled]"
-//|--------------------------------------------------------------------------------------------------------------|
-//|--------------------------------------------------------------------------------------------------------------|
 
 
 //Buy Binds
